@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>링크 만들기</title>
+</head>
+<body>
+	<h1>링크 만들기</h1>
+	<hr>
+	<!--  <a> : 앵커  링크를 만드는 태그 -->
+	포털사이트
+	<ul>
+	<!--  target="_blank" : 새로운탭에서 이동,
+		  target="_self" : 디폴트값, 현재탭에서 이동,
+		  target="_parent" : 
+		  target="_top" :  -->
+		<li><a href="http://www.naver.com" target="_blank">네이버</a></li>
+		<li><a href="http://www.daum.net" target="_self">다음</a></li>
+		<li><a href="http://www.google.com" target="_parent">구글</a></li>
+	</ul>
+	우리가 만든 다른 페이지
+	<ul>
+		<li><a href="ex02-16.html">16. 기본테이블</a></li>
+		<li><a href="ex02-15.html">15. 정의</a></li>
+	</ul>
+	<!--  한테이지 내의 다른 위치로 이동할때는 id(#)나 class(.)를 이용한다. -->
+	<a href="#id1">id1으로 이동</a>
+	<a href="#id2">id2으로 이동</a>
+	<a href=".class1">class1으로 이동</a>
+	<a href=".class2">class2으로 이동</a>
+	
+	<!--  다른페이지 이동후 id값에 맞는 곳으로 이동 -->
+	<a href="ex.02-16.html#id1">id1으로 이동</a><br>
+	
+	<!--  다운로드 -->
+	<p>
+	다운로드<br>
+		<a href="media/1.png" download>스펀지밥</a><br>
+		<a href="media/Aegukga.mp3" download>음악파일</a><br>
+		<a href="ex02-04.html" download>ex02-04.html</a><br>
+	</p>
+	
+	<p id="#id1">123</p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>리스트 만들기</title>
+</head>
+<body>
+	<h2>리스트 만들기</h2>
+	<hr>
+	<!--  <ol><li></li></ol> : 순서가 있는 리스트, <ul><li></li></ul> : 순서가 없는 리스트 
+	리스트 태그안에 반드시 <li></li> 안에 내용을 넣어야 한다.
+	type 속성은 숫자, 알파벳, 로마자 설정에 관련된것
+	start 속성은 몇번째부터 시작될것인지
+	type 디폴트는 "1", start 디폴트는 "1"-->
+	<ol type="A" start="5">
+		<li>JAVA</li>
+		<li>Oracle</li>
+		<li>Web</li>
+	</ol>
+	<hr>
+	<!-- ul 태그의 type 속성은 circle, disc, square 가 있다.
+	디폴트는 disc -->
+	<ul type="circle">
+		<li>JAVA
+			<ol>
+				<li>변수</li>
+				<li>연산자</li>
+				<li>조건문과 반복문</li>
+			</ol></li>
+		<li>Oracle
+			<ol type="A">
+				<li>select</li>
+				<li>insert</li>
+				<li>update</li>
+				<li>delete</li>
+			</ol></li>
+		<li>Web</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>리스트로 메뉴만들기</title>
+	<style type="text/css">
+	#menubar{
+		background: olive;
+	}
+	#menubar ul{/* 메뉴 전체크기 */
+		margin: 0; padding: 0;	width: 567px;/* 메뉴를 모두 포함 할 수 있는크기*/
+		 }
+	#menubar ul li{
+		display: inline-block; /* 메뉴를 옆쪽에 나열하기 위해 */
+		list-style-type: none;
+		padding: 0 15px;
+	}
+	#menubar ul li a {
+		color: white;
+		text-decoration: none;
+		
+	}
+	#menubar ul li a:hover{
+		color: violet;
+	}
+	
+	</style>
+</head>
+<body>
+	<h3>MenuBar</h3>
+	<div id="menubar">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Espresso</a></li>
+			<li><a href="#">Cappuccino</a></li>
+			<li><a href="#">Cafe Latte</a></li>
+			<li><a href="#">F.A.Q</a></li>
+		</ul>
+	</div>
+	
+</body>
+</html>

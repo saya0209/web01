@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>addEventListener()를 이용한 이벤트 사용 익명함수</title>
+	<script>
+		let p;
+		function init(){
+			p=document.getElementById("p");
+			p.addEventListener("mouseover",function(){
+				p.style.backgroundColor = "orchid";
+
+			});
+			p.addEventListener("mouseout",function(){
+				p.style.backgroundColor = "white";
+
+			});
+		}
+	</script>
+</head>
+<body onload="init()">
+	<h3>addEventListener() 사용</h3>
+	<hr>
+	<p id="p">마우스를 올리면 배경색이 변경됩니다.</p>
+	
+</body>
+</html>

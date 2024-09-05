@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>논리 연산</title>
+	<!--  html문서에 글자를 출력 -> body안에 글자로 나타남 -->
+</head>
+<body>
+	<h3>논리 연산</h3>
+	<hr>
+	<script>
+		let x = true, y = false;
+		document.write("x = "+x+", y = "+y+"<br><br>");
+		document.write("x && y : "+(x&&y)+"<br>");	// 그리고 x:참, y:참 일때만 true
+		document.write("x || y : "+(x||y)+"<br>");	// 또는 x, y둘중 하나이상 true일때 true
+		document.write("!x : "+!x+"<br>");	// not x의 반대
+		document.write("<hr>");
+		document.write("(3>2) && (3<4) : "+(3>2) && (3<4)+"<br>");
+		document.write("(3==-2) || (-1<0) : "+(3==-2) || (-1<0)+"<br>");
+	</script>
+</body>
+</html>

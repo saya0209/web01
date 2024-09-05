@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>document.write() 사용</title>
+	<!--  html문서에 글자를 출력 -> body안에 글자로 나타남 -->
+</head>
+<body>
+	<h3>document.write()로 HTML문서 만들기</h3>
+	<hr>
+	<script type="text/javascript">
+		document.write("<h3>Wellcome!!</h3>");
+		document.write("2+5=<br>");
+		document.write("<mark>7입니다.</mark>");
+		function pmt() {
+			// prompt 첫번쨰: 질문내용, 입력할 수 있는창: 기본값
+			let ret = prompt("이름을 입력하세요", "황기태");
+			if (ret == null){
+				// 다이얼로그를 그냥 닫거나, 취소 버튼을 누른경우
+			} else if (ret == ""){
+				// 적어준 값이 없이 확인 버튼을 눌렀을때
+			} else {
+				// 문자열이 ret 변수에 저장이 된 상태
+			}
+		}
+		function conf(){
+			let ret = confirm("전송할까요?");
+			if (ret== true){
+				// 확인 버튼을 눌렀을 때
+			}
+			else {
+				// 취소 버튼이나 다이얼로그를 그냥 닫은 경우
+			}
+		}
+		function al(){
+			alert("클릭하였습니다.")
+		}
+	</script>
+	<a href="javascript:pmt()">prompt함수</a><br>
+	<a href="javascript:conf()">confirm함수</a>
+	<a href="javascript:al()">alter함수</a>
+</body>
+</html>

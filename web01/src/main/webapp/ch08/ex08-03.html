@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>innerHTML 활용법</title>
+	<script>
+		function change(){
+			let p = document.getElementById("firstP");
+			p.innerHTML = "스펀지밥 <img src='media/1.png'>그림";
+			
+		}
+	</script>
+</head>
+<body>
+	<h3>아래 글자를 클릭하면 스펀지밥이 보입니다.</h3>
+	<hr>
+	<p id="firstP" style="color:blue" onclick="change()">여기를<span style="color:red">클릭하세요.</span></p>
+	<script>
+		
+	</script>
+</body>
+</html>

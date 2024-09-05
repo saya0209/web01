@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>z-index 프로퍼티</title>
+	<style type="text/css">
+		div{ position: absolute;}
+		img{ position: absolute;}
+		/* z-index: 객체의 앞뒤 정열 순서 (작을수록 뒤로, 클수록 앞으로)*/
+		/* z-index는 position프로퍼티가 relative, absolute, fixed인 경우에만 동작한다. */
+		/* z-index가 없으면 body에 적히는 순서대로 정열된다. */ 
+		#spadeA{z-index: -3; left: 10px; top: 20px; }
+		#diaA{z-index: 2; left: 40px; top: 30px; }
+		#cloverA{z-index: 3; left: 80px; top: 40px; }
+		#heartA{z-index: 7; left: 120px; top: 50px; }
+	</style>
+</head>
+<body>
+	<h3>z-index 프로퍼티</h3>
+	<hr>
+	<div>
+		<img id="spadeA"alt="스페이드 A" src="media/spade-A.PNG" width="100px" height="140px">
+		<img id="diaA"alt="스페이드 A" src="media/dia-A.PNG" width="100px" height="140px">
+		<img id="cloverA"alt="스페이드 A" src="media/clover-A.PNG" width="100px" height="140px">
+		<img id="heartA"alt="스페이드 A" src="media/dia-A.PNG" width="100px" height="140px">
+	</div>
+</body>
+</html>

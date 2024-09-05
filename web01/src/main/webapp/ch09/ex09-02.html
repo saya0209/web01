@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>DOM 객체를 활용하여 이벤트 사용</title>
+	<script>
+		let p;
+		function init(){
+			p=document.getElementById("p");
+			p.onmouseover = over;
+			p.onmouseout = out;
+		}
+		function over(){
+			p.style.backgroundColor = "orchid";
+		}
+		function out(){
+			p.style.backgroundColor = "white";
+		}
+	</script>
+</head>
+<body onload="init()">
+	<h3>DOM 객체 이벤트 사용</h3>
+	<hr>
+	<p id="p">마우스를 올리면 배경색이 변경됩니다.</p>
+	
+</body>
+</html>

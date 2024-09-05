@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>함수 function</title>
+	<script>
+		function adder(a, b){ 	// 자바스크립트에서 리턴값의 형식이 없고, 파라메터 자료형도 없다.
+			let sum;
+			sum = a+b;
+			return sum;
+		}
+	</script>
+</head>
+<body>
+	<h3>함수 사용 adder(a,b)</h3>
+	<hr>
+	<script>
+		let n = adder(23456, 98765);
+		document.write("23456 + 98765 = "+n+"<br>");
+		// javascript에서 제공하는 전역함수 
+		// eval() 함수 => 수식을 써주면 결과를 리턴(숫자열이나 문자열이나 동일한 결과가 나온다.)
+		let result = eval(23+42+57);
+		document.write("23+42+57 = "+result+"<br>");
+		result = eval("23+42+57");
+		document.write("23+42+57 = "+result+"<br>");
+		// ParseInt() => 문자열로 된 숫자를 정수형으로 준다.
+		result = parseInt("30");
+		document.write("result : "+result+"<br>");
+		result = parseInt("hello");
+		document.write("result : "+result+"<br>");
+		// NaN = 숫자가 아님
+		// isNaN() 함수를 제공한다. : 숫자가 아니면 true
+		result = isNaN(parseInt("hello"));
+		document.write("result : "+result+"<br>");
+		result = isNaN(parseInt(123));
+		document.write("result : "+result+"<br>");
+	</script>
+</body>
+</html>

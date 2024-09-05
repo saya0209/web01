@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Date 객체</title>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <h3>Date 객체</h3>
+    <hr>
+    <script>
+        let now = new Date();
+        // 기준시간 표시
+        document.write("현재시간 : "+now.toUTCString()+"<br><br>");
+        // 년도를 4자리로 리턴
+        document.write(now.getFullYear()+"년도<br>");
+        document.write(now.getMonth()+1+"월<br>");	//getMonth(): 0~11;
+        document.write(now.getDate()+"일<br>");
+        document.write(now.getHours()+"시<br>");
+        document.write(now.getMinutes()+"분<br>");
+        document.write(now.getSeconds()+"초<br>");
+        document.write(now.getMilliseconds()+"밀리초<br>");
+        document.write("<hr>");
+        let next = new Date(2023, 7, 15, 12, 12, 12); // 월은 -1해서 넣어야  한다.
+        document.write("next.toLocaleString() : "+next.toLocaleString()+"<br>")
+    </script>
+</body>
+</html>

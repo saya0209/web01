@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>break 문</title>
+	<!--  html문서에 글자를 출력 -> body안에 글자로 나타남 -->
+</head>
+<body>
+	<h3>1부터 몇까지 더하면 3000이상이 되나요?</h3>
+	<hr>
+	<script>
+		let i = 0, sum = 0;
+		while (true){
+			sum+=i;
+			if(sum>=3000){
+				break;
+			}
+			i++;
+		}
+		document.write(i+"까지 더하면 3000을 넘어요 : "+ sum);
+	</script>
+</body>
+</html>

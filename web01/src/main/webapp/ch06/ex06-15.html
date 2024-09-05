@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>if~else</title>
+	<!--  html문서에 글자를 출력 -> body안에 글자로 나타남 -->
+</head>
+<body>
+	<h3>if~else를 이용한 학점 관리</h3>
+	<hr>
+	<script>
+		let grade;
+		let score = prompt("점수를 입력해주세요.",""); // 리턴값은 문자열
+		score = parseInt(score);	//문자열값을 정수형으로 바꾼다
+		
+		if (score >= 90){
+			grade = "A";
+		} else if (score >= 80){
+			grade = "B";
+		} else if (score >= 70){
+			grade = "C";
+		} else if (score >= 60){
+			grade = "D";
+		} else {
+			grade = "F";
+		}
+		
+		document.write(score + "점은 "+grade+"입니다.");
+		
+		
+	</script>
+</body>
+</html>

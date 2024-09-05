@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>while 문</title>
+	<!--  html문서에 글자를 출력 -> body안에 글자로 나타남 -->
+</head>
+<body>
+	<h3>0에서 n까지 합</h3>
+	<hr>
+	<script>
+		let n = prompt("0보다 큰 정수를 입력해주세요.","0");
+		n = parseInt(n);
+		
+		let i = 0, sum = 0;
+		while (i<=n){
+			sum += i;
+			i++;
+		}
+		document.write("0에서 "+n+"까지의 합은 "+sum+"입니다.")
+	</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>소프트웨어 기술 선호에 관한 설문</title>
+	<link href="survey4.css" type="text/css" rel="stylesheet">
+	<style type="text/css">
+		p, label{
+			font-family: 'HMFMPYUN';
+		}
+		p {
+			background: orange;
+		}
+		#round1 {border-radius: 50px;}
+		body {
+			background-color: aliceblue;
+		}
+		h1 {
+			font-size: 40px; /* h1 글자 크기 */
+			text-align: center;
+			color: brown;
+		}
+		h3 {
+			font-family: Verdana, sans-serif; /* h3 글꼴 */
+		}
+		p, form {
+			font-size: 18px;
+		}
+		div {
+			padding: 10px;
+			border: 10px solid lightgray;
+			background-color: lightgray;
+		}
+		label{
+		font-size: 30px; /* 글씨 크기 */
+		}
+		span {
+			font-size: 30px; /* 글씨 크기 */
+			color: darkblue; /* 글씨 색상 */
+		}
+		select {
+			font-size: 30px; /* 글꼴 크기 조절 */
+		}
+		@font-face{
+		font-family: 'HMFMPYUN';/* 사용할 폰트이름 */
+		font-style: 'nomal'; 	/* 기울임 */
+		font-weight: 400;		/* 굵기 */
+		src: url('fonts/HMFMPYUN.TTF') format('truetype');	/* 폰트경로 */
+		}
+	</style>
+</head>
+<body>
+	<h1>설문지</h1>
+	<h3>소프트웨어 기술에 대한 의견을 듣습니다.</h3>
+	<hr>
+	<form action="#" method="post">
+		<div>
+			<span>학년</span>
+			<label><input type="radio" id="1" name="grade" value="1" checked> 1학년 </label>
+			<label><input type="radio" id="2" name="grade" value="2" > 2학년 </label>
+			<label><input type="radio" id="3" name="grade" value="3" > 3학년 </label>
+			<label><input type="radio" id="4" name="grade" value="4" > 4학년 </label><br><br>
+			
+			<span>성별</span>
+			<label><input type="radio" id="male" name="gender" value="1" checked>남자</label>
+			<label><input type="radio" id="female" name="gender" value="2">여자</label>
+			<br><br>
+
+			<span>관심분야</span>
+			<select id="interest" name="interest">
+				<option value="1">모바일 소프트웨어</option>
+				<option value="2">JAVA</option>
+				<option value="3">ORACLE</option>
+				<option value="4">HTML</option>
+			</select><br><br>
+			
+			<span>진로(다중선택)</span>
+			<label><input type="checkbox" id="developer" name="career" value="developer">개발</label>
+			<label><input type="checkbox" id="planning" name="career" value="planning">기획</label>
+			<label><input type="checkbox" id="business" name="career" value="business">영업</label>
+			<label><input type="checkbox" id="Startup" name="career" value="Startup">창업</label><br><br>
+
+			<span>남기고 싶은 말</span>
+			<textarea id="comments" name="comments" rows="10" cols="50"  placeholder="글을 남겨주세요"></textarea><br><br>
+		</div>
+	</form>
+	<footer>
+		<p id="round1">   Made by BH</p>
+	</footer>
+</body>
+</html>

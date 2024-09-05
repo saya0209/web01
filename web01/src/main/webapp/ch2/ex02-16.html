@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>기본 테이블 만들기</title>
+</head>
+<body>
+	<h2>기본 테이블 만들기</h2>
+	<hr>
+	<!-- table 태그는 테이블을 만들때 사용 -->
+	<table border="1">
+		<!--  caption태그는 테이블의 제목을 나타낼때 사용 -->
+		<caption>2024년 1학기 성적</caption>
+		<!--  테이블의 구조는 
+		<thead></thead>
+		<tbody></tbody>
+		<tfoot></tfoot> -->
+		<thead>
+			<!--  <tr></tr> 테이블의 한줄을 의미 
+			<th></th>는 한 칼럼을 의미-->
+			<tr><th>이름</th><th>HTML</th><th>CSS</th></tr>
+		</thead>
+		<tbody>
+			<tr><th>황기태</th><th>90</th><th>90</th></tr>
+			<tr><th>홍길동</th><th>85</th><th>70</th></tr>
+			<tr><th>이순신</th><th>96</th><th>91</th></tr>
+		</tbody>
+		<tfoot>
+			<tr><th>합</th><th>271</th><th>251</th></tr>
+		</tfoot>
+	</table>
+	<table border="1">
+		<caption>이미지</caption>
+		<tbody>
+			<tr>
+				<th><img src=media/1.png></th>
+				<th><img src=media/2.png></th>
+				<th><img src=media/3.png></th>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript 변수선언</title>
+	<!--  html문서에 글자를 출력 -> body안에 글자로 나타남 -->
+</head>
+<body>
+	<h3>변수선언</h3>
+	<hr>
+	<script>// 변수선언은 let, var 두가지가 있다.
+		let x; //function 밖에 선언한 변수 - 전역변수
+		function f(){ // 함수는 function이라는 예약어를 사용하고 
+			let y; // 함수f()안에서 사용하는 지역변수
+			x = 10;
+			y = 20;
+			z = 30; // 변수선언을 안하고 사용해도 된다.
+			if (y==20){
+				let b = 40; // 변수 b는 if 안에서만 사용되는 지역변수
+				b++;
+				document.write("if 블럭 내 블럭변수 b = "+b+"<br>");
+			}
+			// b는  사용할 수 없습니다.
+			// x, y, z는 사용가능
+			document.write("함수 f() 내 지역변수 y = "+y+"<br>");
+		}
+		
+		f();
+		// b, y는 사용불가
+		// x, z만 사용가능
+		document.write("전역변수 x = "+x+" <br>");
+		document.write("전역변수 z = "+z+" <br>");
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>애니메이션</title>
+	<style type="text/css">
+		@keyframes bomb { /* keyframes은 시간대 별로 태그가 변화하도록 할 수 있는 요소 */
+			from {font-size: 500%}
+			to {font-size: 100%}
+		}
+		h3{
+			animation-name: bomb;
+			animation-duration: 3s; /* 3s = 3초 */
+			animation-iteration-count: infinite;
+		}
+	</style>
+</head>
+<body>
+	<h3>꽝!</h3>
+	<hr>
+	<p>꽝! 글자가 3초동안 500%에서 시작하여 100%로 바뀌는 애니메이션입니다.
+	무한반복 합니다.</p>
+	
+</body>
+</html>

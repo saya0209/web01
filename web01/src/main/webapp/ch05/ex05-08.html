@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>overflow 프로퍼티</title>
+	<!--  태그에 주어진 크기를 넘어갔을때 어떻게 처리할 것인가-->
+	<!--  visible: 태그영역 넘어서도 출력 (디폴트) -->
+	<!--  hidden: 태그영역 넘어서는 부분은 출력안됨 -->
+	<!--  scroll: 스크롤바 항상 부착 -->
+	<!--  auto: 글자가 넘치면 스크롤바 생성 -->
+	<style type="text/css">
+		p{
+			width: 15em;
+			height: 3em;
+			border: 1px solid lightgray;
+		}
+		.hidden{overflow: hidden;}
+		.visible{overflow: visible;}
+		.scroll{overflow: scroll;}
+		.auto{overflow: auto;}
+	</style>
+	
+</head>
+<body>
+	<h3>overflow 프로퍼티</h3>
+	<hr>
+	<p class="hidden">overflow에 hidden 값을 적용하면 박스를 넘어가는 내용이 보이지 않습니다.</p><br>
+	<p class="visible">overflow에 visible 값을 적용하면 박스를 넘어가는 내용이 출력됩니다.</p><br>
+	<p class="scroll">overflow에 scroll 값을 적용하면 박스에 스크롤이 생깁니다.</p><br>
+	<p class="auto">overflow에 auto 값을 적용하면 박스를 넘어가는 글이 생길때 스크롤이 생깁니다.</p><br>
+	
+</body>
+</html>

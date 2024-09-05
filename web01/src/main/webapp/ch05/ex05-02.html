@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>relative(상대) 배치</title>
+	<style type="text/css">
+		div{
+			display: inline-block;
+			height: 50px;
+			width: 50px;
+			border: 1px solid lightgray;
+			text-align: center;
+			color: white;
+			background: red;
+		}
+		#down:hover{ /* id가 down으로 설정된 블럭에 마우스를 올리면 적용 */
+			position: relative;
+			left: 20px;
+			top: 20px;
+			background: green; 
+		}
+		#up:hover{ /* id가 up으로 설정된 블럭에 마우스를 올리면 적용 */
+			position: relative;
+			right: 20px;
+			bottom: 20px;
+			background: green; 
+		}
+		
+	</style>
+</head>
+<body>
+ 	<h3>상대 배치</h3>
+ 	<p>H와 k에 마우스를 올려보세요</p>
+ 	<hr>
+ 	<div>T</div>
+ 	<div id="down">H</div>
+ 	<div>a</div>
+ 	<div>n</div>
+ 	<div id="up">k</div>
+ 	<div>s</div>
+</body>
+</html>

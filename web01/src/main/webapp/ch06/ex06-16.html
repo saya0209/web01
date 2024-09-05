@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>switch</title>
+	<!--  html문서에 글자를 출력 -> body안에 글자로 나타남 -->
+</head>
+<body>
+	<h3>커피주문</h3>
+	<hr>
+	<script>
+	function service(){
+		let price = 0;
+		let coffee = prompt("무슨 커피 드릴까요?","");
+		switch(coffee){
+		case "espresso":
+		case "에스프레소":
+			price = 2000;
+			break;
+		case "카푸치노":
+			price = 3000;
+			break;
+		case "카페라떼":
+			price = 3500;
+			break;
+		default:
+			document.write(coffee+"메뉴는 없습니다.")
+			break;
+		}
+		if (price != 0){
+			document.write(coffee+"는 "+price+"원 입니다.")
+		}	
+	}
+	</script>
+	<p>메뉴는 에스프레소(espresso), 카푸치노, 카페라떼 가 있습니다.</p>
+	<a href=javascript:service();>주문하시겠습니까?</a>
+</body>
+</html>

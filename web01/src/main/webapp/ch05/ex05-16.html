@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>다양한 변환 사례</title>
+	<!--  transform 프로퍼티를 이용한 실습 -->
+	<style type="text/css">
+		div{
+			display: inline-block;
+			padding: 5px;
+			color: white;
+			background: olivedrab;
+		}
+		div#rotate {transform: rotate(20deg)} /* 회전 */
+		div#skew {transform: skew(0deg, -20deg)} /* 기울임 */
+		div#translate {transform: translateY(100px)} /* Y축 이동 */
+		div#scale {transform: scale(3, 1)} /* 확대/축소 */
+		
+		/* 마우스를 올릴때 */
+		div#rotate:hover {transform: rotate(80deg)} /* 회전 */
+		div#skew:hover {transform: skew(0deg, -60deg)} /* 기울임 */
+		div#translate:hover {transform: translate(50px, 100px)} /* X,Y축 이동 */
+		div#scale:hover {transform: scale(4, 2)} /* 확대/축소 */
+		
+		/* 마우스를 클릭했을때 */
+		div#rotate:active {transform: rotate(120deg)} /* 회전 */
+		div#skew:active {transform: skew(0deg, -100deg)} /* 기울임 */
+		div#translate:active {transform: translate(100px, 150px)} /* X,Y축 이동 */
+		div#scale:active {transform: scale(1, 5)} /* 확대/축소 */
+		
+	</style>
+</head>
+<body>
+	<h3>다양한 transform 활용</h3>
+	<p>회전, 기울임, 이동, 확대/축소 적용</p>
+	<hr>
+	<div id="rotate">rotate 20 deg</div>
+	<div id="skew">skew (0,-20) deg</div>
+	<div id="translate">translate Y 100px</div>
+	<div id="scale">scale (3,1)</div>
+</body>
+</html>

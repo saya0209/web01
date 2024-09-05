@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>구구단</title>
+	<script>
+		function gugudan(n){
+			let m = parseInt(n);
+			if (isNaN(m) || m<2 || m>9){
+				alert("잘못입력 하셨습니다.");
+				return;
+			}
+			document.write("<p>"+n+"단</p>");
+			for(let i=1; i<=9; i++){
+				document.write(m+" X "+i+" = "+(m*i)+"<br>");
+			}
+		}
+	</script>
+</head>
+<body>
+	<h3>구구단</h3>
+	<hr>
+	<script>
+		let n = prompt("구구단 몇단을 출력할까요? : ","");
+		gugudan(n);
+	</script>
+</body>
+</html>

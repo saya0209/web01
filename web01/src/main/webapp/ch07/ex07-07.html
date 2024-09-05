@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>String 객체</title>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <h3>String 객체</h3>
+    <hr>
+    <script>
+    	 let a = new String("Boys and Girls");
+    	 let b = "!!";
+    	 document.write("a : "+a+"<br>");
+    	 document.write("b : "+b+"<br><hr>");
+    	 
+    	 document.write(a.charAt(0)+"<br>");	// charAt(숫자); 숫자방에 있는 글자
+    	 document.write(a.concat(b,"입니다.")+"<br>");
+    	 document.write(a.indexOf("s")+"<br>");
+    	 document.write(a.indexOf("and")+"<br>");
+    	 document.write(a.indexOf("And")+"<br>");
+    	 document.write(a.slice(5,10)+"<br>");	// 5부터 10-1 까지 
+    	 document.write(a.substr(5,3)+"<br>");	// 5부터 3글자
+    	 document.write(a.toUpperCase()+"<br>");	// 문자를 대문자로 바꾼다.   	 
+    	 document.write(a.replace("and","or")+"<br>");	// a를 b로 바꿔라   	 
+    	 document.write("       kitae        ".trim()+"<br><br>");	// 문자 양쪽의 공백제거
+    	 
+    	 let sub = a.split(" ");	// 구분자 변경
+    	 document.write("a를 빈칸으로 분리<br>");
+    	 for (let i=0; i<sub.length; i++){
+    		 document.write("sub"+i+"="+sub[i]+"<br>");
+    	 }
+    	 
+    	 document.write("<hr>String메서드 실행후 a, b, b<br>");
+    	 document.write("a : "+a+"<br>");
+    	 document.write("b : "+b+"<br><hr>");
+    	 
+    </script>
+</body>
+</html>
